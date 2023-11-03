@@ -165,6 +165,13 @@ btn.addEventListener("click", function (e) {
   obj.price = ticketPrice.value;
   obj.rate = ticketRate.value;
   data.push(obj);
+  ticketName.value = "";
+  ticketImgUrl.value = "";
+  ticketRegion.value = "";
+  ticketDescription.value = "";
+  ticketNum.value = "";
+  ticketPrice.value = "";
+  ticketRate.value = "";
   init();
-  console.log(obj);
+  // console.log(obj);
 });

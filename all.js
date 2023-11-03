@@ -143,6 +143,19 @@ const ticketDescription = document.querySelector("#ticketDescription");
 btn.addEventListener("click", function (e) {
   //   console.log(e.target);
 
+  if (
+    ticketName.value ||
+    ticketImgUrl.value ||
+    ticketRegion.value ||
+    ticketDescription.value ||
+    ticketNum.value ||
+    ticketPrice.value ||
+    ticketRate.value == ""
+  ) {
+    alert("請輸入對應資訊");
+    return;
+  }
+
   let obj = {};
   obj.name = ticketName.value;
   obj.imgUrl = ticketImgUrl.value;

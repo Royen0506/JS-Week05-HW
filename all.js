@@ -85,7 +85,7 @@ init(data);
 // console.log(dataNum);
 select.addEventListener("change", function (e) {
   if (e.target.value == "") {
-    init();
+    init(data);
     return;
   }
   let count = 0;

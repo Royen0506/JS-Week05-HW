@@ -172,6 +172,6 @@ btn.addEventListener("click", function (e) {
   obj.rate = ticketRate.value;
   data.push(obj);
   ticketForm.reset();
-  init();
+  init(data);
   // console.log(obj);
 });
